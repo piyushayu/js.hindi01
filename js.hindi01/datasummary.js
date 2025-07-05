@@ -37,7 +37,6 @@ const bigNumber = 3574592945475487n; //bigint, note the 'n' at the end
 //js is statically or primitive typed language?
 // js is dynamically typed language, meaning we can change the type of a variable at runtime
 // for example, we can assign a string to a variable and then assign a number to the
-
 // same variable later
 // let x = "hello"; //x is a string
 // x = 10; //x is now a number  

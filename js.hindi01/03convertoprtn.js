@@ -8,7 +8,7 @@ let valueInNumber = Number(score); //convert string to number
 console.log(typeof valueInNumber); //number
 //now valueInNumber is a number
 
-//console.log(valueInNumber); 
+console.log(valueInNumber); 
 
 NaN //Not a Number
 //if we try to convert a string that cannot be converted to a number, it will return NaN
@@ -26,14 +26,14 @@ NaN //Not a Number
 let isLoggedIn = "";
 
 let booleanIsLoggedIn = Boolean(isLoggedIn); 
-//console.log(booleanIsLoggedIn); 
+console.log(booleanIsLoggedIn); 
 
 //empty string is falsy value
 //"hit" is truthy value
 
   let someNumber = 33;
   let stringNumber = String(someNumber); //convert number to string
- // console.log(stringNumber); 
+  console.log(stringNumber); 
 
   //console.log(typeof stringNumber); //string    
 //now stringNumber is a string

@@ -6,9 +6,9 @@ const repocount = 20;
 
 //modern way ( string interpolation)
 
-console.log('hello my name is ${name} and my repo count is ${repocount}');
 
 
+console.log(`hello my name is ${name} and my repo count is ${repocount}`);
 //another method to create a string is using the String constructor
 // This is not commonly used, but it is valid JavaScript
 // It creates a string object, which is different from a primitive string
@@ -24,7 +24,9 @@ console.log(gameName.__proto__); // This will show the prototype of the String o
 console.log(gameName.length); // This will show the length of the string object
 //console.log(gameName.toUpperCase()); // This will convert the string object to uppercase
 
-//console.log(gameName.charAt(1)); // This will return the character at index 3 of the string object
+console.log(gameName.charAt(1)); // This will return the character at index 1 of the string object
+//charAt is a method of the String object that returns the character at the specified index
+// It is similar to using the index operator, but it is a method of the String object
 //counting start from 0
 
 //console.log(gameName.indexOf("d")); // This will return the index of the first occurrence of "d" in the string object
@@ -34,7 +36,8 @@ console.log(newString); // This will print the substring
 
 //isma last ki value nahi aayegi, yani ki last wala character nahi aayega
 
-const anotherString = gameName.slice(-6 , 1); // This will return a substring from index 0 to index 2 of the string object
+const anotherString = gameName.slice(-6 , 1); // This will return a substring from index -6 to index 1 of the string object
+//slice is similar to substring, but it can take negative indices
 //we can give negative values to slice, which will count from the end of the string
 
 console.log(anotherString); // This will print the substring
