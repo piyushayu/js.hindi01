@@ -22,7 +22,7 @@ console.log(myArr[0]); // 0
 myArr.shift(); // removes the first element of the array
 
 
-//console.log(myArr.includes(7)); // false, checks if 7 is present in the array
+//.log(myArr.includes(7)); // false, checks if 7 is present in the array
 //console.log(myArr.indexOf(8)); // -1, checks the index of 8 in the array (not present)
 
 //-1 daga index ka matlab hota hai ki element nahi mila

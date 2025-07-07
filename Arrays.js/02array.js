@@ -27,7 +27,7 @@ console.log(all_new_heros); // ["thor", "ironman", "hulk", "spiderman", "captain
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [ 6, 7, [4,5]]]
 
-const real_another_array = another_array.flat(Infinity); // flattens the array to a depth of 2
+const real_another_array = another_array.flat(Infinity); // flattens the array to a depth of infinity
 
 console.log(real_another_array); 
 
@@ -53,8 +53,49 @@ console.log(Array.of (score1, score2, score3)); // creates an array with the giv
 //returns [100, 200, 300]; // creates an array with the given elements
 
 
+//syntax jab hama bich ma kuch gusana ho kuch
 
 
+//styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+
+
+/*- styles.length
+- Gets the total number of elements in the styles array.
+
+- styles.length - 1
+
+- Subtracts 1 to adjust for zero-based indexing (arrays in JavaScript start at index 0).
+
+- (styles.length - 1) / 2
+
+- Divides by 2 to find the middle index. This works for both even and odd lengths.
+
+- Math.floor(...)
+
+- Rounds down to the nearest whole number. This ensures you get a valid index (especially important when the array has an even number of elements).
+- styles[...] = "Classics"
+
+- Assigns the value "Classics" to the calculated index in the array.*/
+
+
+//let styles = ["Jazz", "Rock", "Pop", "Hip-Hop", "Electronic"];
+// styles.length = 5
+// (5 - 1) / 2 = 2
+// Math.floor(2) = 2
+
+//styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+// styles becomes ["Jazz", "Rock", "Classics", "Hip-Hop", "Electronic"]
+
+
+//for even values in array
+
+//let styles = ["Jazz", "Rock", "Pop", "Hip-Hop"];
+// styles.length = 4
+// (4 - 1) / 2 = 1.5
+// Math.floor(1.5) = 1
+
+//styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+// styles becomes ["Jazz", "Classics", "Pop", "Hip-Hop"]
 
 
 
