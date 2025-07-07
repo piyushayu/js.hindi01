@@ -31,7 +31,8 @@ lastLoginDays: ["monday", "tuesday", "wednesday"],
 
 //console.log(JsUser.name); // Piyush
 
-//try to use square brackets for accessing the value
+//try to use square brackets for accessing the values.
+
 
 //console.log(JsUser["Email"]); 
 
