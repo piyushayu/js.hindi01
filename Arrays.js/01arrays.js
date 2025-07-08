@@ -57,5 +57,35 @@ console.log(myn2);
 //splice modifies the original array and returns the removed elements   
 
 
+//it is a way to remove and add other element 
+
+
+/*let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// remove 3 first elements and replace them with another
+arr.splice(0, 3, "Let's", "dance");
+
+alert( arr ) // now ["Let's", "dance", "right", "now"]*/
+
+
+//its a method to add element without removal
+
+/*let arr = ["I", "study", "JavaScript"];
+
+// from index 2
+// delete 0
+// then insert "complex" and "language"
+arr.splice(2, 0, "complex", "language");
+
+alert( arr ); // "I", "study", "complex", "language", "JavaScript"*/
+
+
+
+
+
+
+
+
+
 
 
