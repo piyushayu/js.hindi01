@@ -20,7 +20,7 @@ console.log("s");
 
 function addTwoNumbers(number1, Number2){
 
-    //console.log(number1 + Number2);//
+    console.log(number1 + Number2);//
     
     let result = number1 + Number2
 return result
@@ -70,7 +70,7 @@ return `${username} just logged in `
 }
 //}
 
-// console.log(loginUserMessage("hitesh"))
+ console.log(loginUserMessage("hitesh"))
 
 //console.log(loginUserMessage("piyush"));
 
