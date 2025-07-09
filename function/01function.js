@@ -132,4 +132,120 @@ console.log(returnSecondValue(myArr));
 
 
 
+//para meters note
+
+function showMessage(from, text) {
+
+  from = '*' + from + '*'; // make "from" look nicer
+
+  console.log( from + ': ' + text );
+}
+
+let from = "Ann";
+
+showMessage(from, "Hello"); // *Ann*: Hello
+
+// the value of "from" is the same, the function modified a local copy
+console.log( from ); // Ann
+
+
+//we can give some text in parameter to avoid seeing undefined as argument
+
+//We can specify the so-called “default” (to use if omitted) value for a parameter in the function declaration, using =:
+
+function showMessage(from, text = "no text given") {
+  alert( from + ": " + text );
+}
+
+showMessage("Ann"); // Ann: no text given
+
+
+function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() only executed if no text given
+  // its result becomes the value of text
+}
+
+
+
+//Nowadays, we can come across them in old scripts.
+
+//For example, an explicit check for undefined:
+
+function showMessage(from, text) {
+  if (text === undefined) {
+    text = 'no text given';
+  }
+
+  alert( from + ": " + text );
+}
+
+
+
+
+//Or we could use the || operator:
+
+/*function showMessage(text) {
+  // if text is undefined or otherwise falsy, set it to 'empty'
+  text = text || 'empty';
+  ...
+}*/
+
+
+//how to use return  
+
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+let age = prompt('How old are you?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+
+//naming function
+ 
+showMessage()     // shows a message
+getAge()          // returns the age (gets it somehow)
+calcSum()         // calculates a sum and returns the result
+createForm()      // creates a form (and usually returns it)
+checkPermission() // checks a permission, returns true/false
+
+//For example, the jQuery framework defines a function with $. The Lodash library has its core function named _.
+
+//these are exceptions. Generally function names should be concise and descriptive.
+
+
+//Using a question mark operator '?':
+
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+//Using OR || (the shortest variant):
+
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+//Note that the parentheses around age > 18 are not required here. They exist for better readability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
