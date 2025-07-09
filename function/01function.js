@@ -201,9 +201,9 @@ function checkAge(age) {
   }
 }
 
-let age = prompt('How old are you?', 18);
+let userAge = prompt('How old are you?', 18);
 
-if ( checkAge(age) ) {
+if ( checkAge(userAge) ) {
   alert( 'Access granted' );
 } else {
   alert( 'Access denied' );
@@ -234,10 +234,70 @@ function checkAge(age) {
 }
 //Note that the parentheses around age > 18 are not required here. They exist for better readability.
 
+//call back functions,
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "You agreed." );
+}
+
+function showCancel() {
+  alert( "You canceled the execution." );
+}
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+ask("Do you agree?", showOk, showCancel);
+
+
+//another method of above thing by fraction expression 
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
 
 
 
+//easist way to do this, a condition where functn expression is more useeful than functn dicleration
+let age = prompt("What is your age?", 18);
 
+let welcome = (age < 18) ?
+  function() { alert("Hello!"); } :
+  function() { alert("Greetings!"); };
+
+welcome(); // ok now
+
+
+//arrow function
+//They took arguments from the left of =>, evaluated and returned the right-side expression with them.
+
+/*let age = prompt("What is your age?", 18);
+
+let welcome = (age < 18) ?
+  () => alert('Hello!') :
+  () => alert("Greetings!");
+
+welcome();*/
+
+//Sometimes we need a more complex function, with multiple expressions and statements. In that case, we can enclose them in curly braces. The major difference is that curly braces require a return within them to return a value (just like a regular function does).
+
+
+let sum = (a, b) => {  // the curly brace opens a multiline function
+  let result = a + b;
+  return result; // if we use curly braces, then we need an explicit "return"
+};
+
+alert( sum(1, 2) ); // 3
 
 
 
