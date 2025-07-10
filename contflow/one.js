@@ -61,18 +61,54 @@ console.log("less than 750");
 // asa hi kar ka hum log bhot sara else  laga ka multiple checks kar sakta ha 
 
 
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+
+// & ka matlab ha ki jitni bhi condition ha vo sari true ani chaiye
+
+if (userLoggedIn && debitCard && 2==2 ){
+
+console.log("Allow to buy coursre");
+
+}
+
+// || ka matlab ha sirf ik condn bhi true hui to ma jau ga
+
+if (loggedInFromGoogle || loggedInFromEmail || guestUser){
+
+console.log("User logged in ");
+
+}
 
 
 
+// Nullish Coalescing operator (??): null undefined
+
+let val1;
+//val1 = 5 ?? 10
+
+//val1 = null ?? 10
+
+//null ayi ha to uska safety check karta ha , kuch nahi aya to null aa jaya ga
+
+//val1 = undefined ?? 15
 
 
+val1 = null ?? 10 ?? 20
+// isko jo value sabse pahela mil jaya gi vo assign kar daga
+
+console.log(val1);
 
 
+// Terniary Operator
 
+//condition ? true : false
 
-
-
-
+const iceteaprice = 300
+iceteaprice  <= 80 ? console.log("less than 80") : console.log("more than 80");
 
 
 
